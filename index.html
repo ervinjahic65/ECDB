@@ -532,7 +532,7 @@
                             </div>
                         </div>
                     </div>
-                    
+
                     <section class="has-background-blue-700" style="padding-top:4.5rem;padding-bottom:4.5rem;background-repeat:no-repeat;background-position:center center;background-size:cover;background-image:url(files/background.jpg);overflow:hidden;" data-v-34d17be2="" data-v-e2bb1b2d="">
                         <div class="container is-max-widescreen px-3-mobile py-3-mobile px-3-tablet py-3-tablet" data-v-e2bb1b2d="">
                             <div class="is-relative headline--mobile-sizes" data-v-e2bb1b2d="" data-v-07b55510="">
@@ -641,6 +641,81 @@
             </div>
             <!--]-->
         </div>
-        
+        <script>
+            document.addEventListener('DOMContentLoaded', () => {
+                // Get references to the necessary elements
+                const subscribeButton = document.getElementById('newsletterSubmitButton');
+                const emailInput = document.querySelector('#newsletter input[type="email"]');
+                // Get the container that holds the form's title, input, button, and privacy text
+                const formContentContainer = document.querySelector('#newsletter .newsletter-box-dark > div[style*="max-width:480px"]');
+
+                if (subscribeButton && emailInput && formContentContainer) {
+                subscribeButton.addEventListener('click', () => {
+                const email = emailInput.value.trim();
+
+                // Basic email validation
+                // Uses a simple regex, consider more robust validation if needed
+                const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+                if (!email || !emailRegex.test(email)) {
+                    alert('Please enter a valid email address.');
+                    // Optionally, add visual feedback like changing border color
+                    emailInput.focus();
+                    return; // Stop the function if validation fails
+                }
+
+                // Disable the button to prevent multiple clicks
+                subscribeButton.disabled = true;
+                emailInput.disabled = true; // Also disable input
+
+                // --- Show Loading Indicator ---
+                // Clear the existing content within the form container
+                formContentContainer.innerHTML = '';
+
+                // Create and append the loading GIF
+                const loadingImg = document.createElement('img');
+                loadingImg.src = 'files/loading.gif'; // Path to your loading GIF
+                loadingImg.alt = 'Submitting...';
+                loadingImg.style.display = 'block'; // Center the image
+                loadingImg.style.margin = '30px auto'; // Add some vertical margin
+                loadingImg.style.width = '50px'; // Adjust size as needed
+                loadingImg.style.height = '50px'; // Adjust size as needed
+
+                formContentContainer.appendChild(loadingImg);
+
+                // --- Simulate Form Submission (Replace with actual API call) ---
+                setTimeout(() => {
+                    // --- Show Thank You Message ---
+                    // Clear the loading indicator
+                    formContentContainer.innerHTML = '';
+
+                    // Create the thank you message elements (mimicking original style)
+                    const thankYouTitle = document.createElement('div');
+                    thankYouTitle.className = 'has-text-white title has-text-weight-semibold is-size-4 mb-0';
+                    thankYouTitle.style.lineHeight = '130%';
+                    thankYouTitle.style.textAlign = 'center';
+                    thankYouTitle.textContent = 'Thank You!';
+
+                    const thankYouText = document.createElement('p');
+                    thankYouText.className = 'has-text-white pt-2 pb-4';
+                    thankYouText.style.opacity = '0.8';
+                    thankYouText.style.lineHeight = '135%';
+                    thankYouText.style.textAlign = 'center';
+                    thankYouText.textContent = 'You have successfully subscribed to our newsletter.';
+
+                    // Append the thank you messages to the container
+                    formContentContainer.appendChild(thankYouTitle);
+                    formContentContainer.appendChild(thankYouText);
+
+                    // Note: The button and input remain disabled in this state.
+                    // If you wanted the user to potentially subscribe again, you'd need
+                    // different logic (e.g., showing the form again after a delay).
+
+                    }, 2000); // Simulate a 2-second network delay
+                });
+                }   else {
+                        console.error("Could not find required elements for newsletter subscription.");
+                    }
+            });
+        </script>
     </body>
 </html>
