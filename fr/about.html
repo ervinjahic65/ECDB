@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>À propos | Analyse Vérifiée</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="icon" type="image/png" href="files/logo.png" sizes="16x16">
+  <style>
+    /* Optional: Simple hamburger toggle styling */
+    .mobile-nav { display: none; }
+    @media (max-width: 768px) {
+      .mobile-nav { display: block; }
+      .desktop-nav { display: none; }
+    }
+  </style>
+</head>
+<body class="flex flex-col min-h-screen bg-slate-900 text-slate-300">
+  <header class="w-full z-30 fixed bg-slate-800/70 backdrop-blur-sm">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6">
+      <div class="flex items-center justify-between h-16 md:h-20">
+        <a href="index.html" class="inline-flex">
+          <img src="files/logo.png" alt="Logo" width="184" height="32" class="max-w-none h-16" />
+        </a>
+        <nav class="desktop-nav">
+          <ul class="flex space-x-6 items-center">
+            <li><a href="index.html" class="hover:text-white transition duration-150">Accueil</a></li>
+            <li><a href="about.html" class="hover:text-white transition duration-150">À propos</a></li>
+            <li><a href="contact.html" class="hover:text-white transition duration-150">Contactez-nous</a></li>
+            <li><a href="terms.html" class="hover:text-white transition duration-150">Conditions</a></li>
+            <li><a href="privacy.html" class="hover:text-white transition duration-150">Confidentialité</a></li>
+          </ul>
+        </nav>
+        <div class="mobile-nav block md:hidden">
+          <button id="menu-btn" class="focus:outline-none">
+            <svg class="w-6 h-6 fill-slate-300 hover:fill-white transition duration-150" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
+              <path d="M3 6h14M3 10h14M3 14h14" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+            </svg>
+          </button>
+        </div>
+      </div>
+    </div>
+    <nav id="mobile-menu" class="hidden bg-slate-800">
+      <ul class="flex flex-col space-y-2 px-4 py-3">
+        <li><a href="index.html" class="block hover:text-white transition duration-150">Accueil</a></li>
+        <li><a href="about.html" class="block hover:text-white transition duration-150">À propos</a></li>
+        <li><a href="contact.html" class="block hover:text-white transition duration-150">Contactez-nous</a></li>
+        <li><a href="terms.html" class="block hover:text-white transition duration-150">Conditions</a></li>
+        <li><a href="privacy.html" class="block hover:text-white transition duration-150">Confidentialité</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="flex-grow pt-20">
+    <section class="max-w-6xl mx-auto px-4 sm:px-6 py-12">
+      <div class="text-center">
+        <h1 class="text-4xl md:text-5xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-slate-200/70 to-slate-100/70 pb-4">
+          À propos d'Analyse Vérifiée
+        </h1>
+        <p class="text-lg md:text-xl text-slate-300">
+          Chez Analyse Vérifiée, nous sommes à la pointe de l'innovation technologique et financière, dédiés à la transformation du paysage commercial dans le monde numérique en rapide évolution d'aujourd'hui. Nous ne sommes pas qu'une entreprise ; nous sommes un catalyseur de progrès, permettant aux entreprises non seulement de naviguer mais aussi de prospérer dans les complexités du marché moderne. Notre expertise réside dans la création de solutions sur mesure et de pointe qui intègrent de manière transparente la technologie et la finance, offrant une base solide pour une croissance durable et une efficacité inégalée.
+
+          Analyse Vérifiée est née d'une vision visant à démystifier la relation complexe entre la technologie et la finance, rendant des outils sophistiqués accessibles et percutants pour les entreprises de toutes tailles. Nous comprenons les défis auxquels les entreprises sont confrontées pour suivre le rythme des avancées technologiques tout en gérant efficacement leurs opérations financières. C'est pourquoi nous nous sommes donné pour mission de combler ce fossé, en offrant des solutions intégrées à la fois puissantes et conviviales.
+
+          Notre engagement envers l'innovation est inébranlable. Nous investissons continuellement dans la recherche et le développement, explorant les frontières de la technologie pour vous apporter des solutions non seulement actuelles, mais aussi pérennes. De l'analyse pilotée par l'IA aux transactions sécurisées par la blockchain, nous exploitons les technologies les plus avancées pour créer un avantage concurrentiel pour nos clients. Nous croyons que la technologie doit être un catalyseur, un multiplicateur de force qui amplifie le potentiel humain et favorise la réussite des entreprises.
+
+          Mais notre engagement va au-delà de la simple technologie. Nous sommes profondément investis dans la compréhension des besoins financiers uniques de chaque entreprise avec laquelle nous collaborons. Nos solutions financières sont conçues pour être adaptables et évolutives, répondant aux exigences spécifiques de divers secteurs et modèles commerciaux. Nous croyons au développement de partenariats à long terme, en travaillant en étroite collaboration avec nos clients pour comprendre leurs objectifs et leurs défis, et en fournissant des stratégies sur mesure qui produisent des résultats tangibles. Analyse Vérifiée est plus qu'un fournisseur de services ; nous sommes votre allié stratégique dans le parcours vers la transformation numérique et la prospérité financière.
+        </p>
+      </div>
+    </section>
+
+    <section class="max-w-6xl mx-auto px-4 sm:px-6 py-12 border-t border-slate-700">
+      <div class="space-y-4">
+        <h2 class="text-3xl font-semibold bg-clip-text text-transparent bg-gradient-to-r from-slate-200/70 to-slate-100/70">
+          Notre histoire
+        </h2>
+        <p>
+          L'histoire d'Analyse Vérifiée a commencé en 2020, non pas dans une tour d'entreprise animée, mais dans l'énergie vibrante d'une petite startup. Animés par une grande vision et une passion encore plus grande, nos fondateurs ont entrepris de répondre à un besoin essentiel dans le monde des affaires : simplifier le paysage souvent complexe des processus financiers et numériques, en particulier pour l'épine dorsale de notre économie – les petites et moyennes entreprises (PME). Nous avons reconnu que ces entreprises, bien que pleines de potentiel, manquaient souvent des ressources et de l'expertise nécessaires pour tirer pleinement parti de la technologie et optimiser leurs stratégies financières.
+
+          Dès nos humbles débuts, armés d'ordinateurs portables et d'un engagement commun à faire la différence, Analyse Vérifiée a commencé à tracer sa voie. Notre objectif initial était de construire des plateformes conviviales qui démystifiaient les outils financiers complexes, les rendant accessibles aux entreprises sans services informatiques ou financiers dédiés. Le bouche-à-oreille s'est rapidement répandu alors que les premiers clients ont constaté directement le pouvoir transformateur de nos solutions – des flux de travail rationalisés, des coûts opérationnels réduits et des capacités de prise de décision améliorées.
+
+          Alors que nous écoutions notre clientèle croissante et surveillions attentivement le pouls du marché en évolution, Analyse Vérifiée a stratégiquement élargi son offre de services. Nous nous sommes aventurés dans le développement de plateformes intégrées qui allaient au-delà des fonctionnalités de base, en incorporant des fonctionnalités telles que des canaux de communication directe pour un engagement client amélioré et une automatisation sophistiquée des processus critiques afin de libérer un capital humain précieux. Chaque défi rencontré a été considéré comme une opportunité d'apprentissage, une chance d'affiner nos solutions et de mieux comprendre les besoins nuancés des diverses entreprises.
+
+          Notre parcours a été celui d'une évolution constante, marquée par des innovations clés qui ont permis aux entreprises de divers secteurs d'atteindre leurs objectifs avec une rapidité et une sécurité sans précédent. Nous sommes fiers de la confiance que nos clients nous ont accordée, un témoignage de notre engagement inébranlable envers l'excellence et de notre capacité avérée à produire des résultats. D'une petite startup avec un rêve à un leader reconnu dans les solutions technologiques et financières, l'histoire d'Analyse Vérifiée est un récit de dévouement, d'innovation et d'une quête incessante pour permettre aux entreprises de prospérer à l'ère numérique.
+        </p>
+        <p>
+          Notre passion pour l'innovation nous a conduits à développer et à affiner constamment des plateformes intégrées qui ne sont pas seulement des outils, mais des atouts stratégiques pour nos clients. Nous comprenons qu'une communication efficace est l'élément vital de toute entreprise prospère, c'est pourquoi nos plateformes facilitent une communication directe et transparente, favorisant des relations clients plus solides et permettant une réponse rapide à la dynamique du marché. De plus, nous défendons le pouvoir de l'automatisation pour libérer les entreprises des tâches banales et répétitives, leur permettant de se concentrer sur les initiatives stratégiques et les compétences clés.
+
+          Chaque défi que nous avons relevé a été considéré comme une occasion inestimable d'apprendre et d'évoluer. La nature dynamique des secteurs de la technologie et de la finance exige une adaptation constante, et Analyse Vérifiée a toujours été à l'avant-garde de cette réactivité. Nous nous adaptons de manière proactive aux besoins en constante évolution du marché, en veillant à ce que nos solutions restent pertinentes, efficaces et en avance sur la concurrence. Avec une vision résolument tournée vers l'avenir, Analyse Vérifiée continue d'investir massivement dans la recherche et le développement, repoussant les limites du possible pour fournir des solutions évolutives et personnalisées qui répondent aux demandes en constante évolution du monde des affaires moderne.
+        </p>
+      </div>
+    </section>
+
+    <section class="max-w-6xl mx-auto px-4 sm:px-6 py-12 border-t border-slate-700">
+      <div class="space-y-4">
+        <h2 class="text-3xl font-semibold bg-clip-text text-transparent bg-gradient-to-r from-slate-200/70 to-slate-100/70">
+          Mission et valeurs
+        </h2>
+        <p>
+          Au cœur d'Analyse Vérifiée réside une conviction fondamentale : la technologie, dans sa forme la plus puissante, doit servir l'humanité et faire progresser les entreprises de manière positive et significative. Notre mission n'est pas simplement de fournir des solutions qui optimisent les processus ; elle est de créer un effet d'entraînement de changement positif, générant un impact durable à la fois sur la communauté que nous servons et sur l'environnement que nous partageons. Nous sommes animés par un profond sens du devoir, nous efforçant de créer une technologie non seulement efficace mais aussi éthiquement saine et socialement responsable.
+
+          Nous opérons avec une intégrité inébranlable, en adoptant la transparence dans toutes nos transactions et en canalisant notre passion dans chaque projet que nous entreprenons. Notre engagement envers l'excellence n'est pas qu'un simple slogan d'entreprise ; il est ancré dans notre ADN. Nous recherchons sans relâche les normes les plus élevées, nous efforçant constamment de dépasser les attentes de nos clients dans chaque engagement. Nous croyons qu'il faut bâtir la confiance par une performance constante, une communication claire et un dévouement sincère à la réussite du client.
+
+          Nos valeurs fondamentales sont le fondement d'Analyse Vérifiée, guidant chaque décision et action que nous prenons :
+
+          * **Innovation :** Nous sommes implacables dans notre recherche de solutions révolutionnaires, explorant constamment de nouvelles technologies et méthodologies pour repousser les limites du possible. Nous favorisons une culture de créativité et d'expérimentation, encourageant notre équipe à sortir des sentiers battus et à remettre en question les approches conventionnelles.
+          * **Engagement :** Nous sommes profondément engagés envers la réussite de nos clients, allant au-delà de leurs attentes pour comprendre leurs besoins uniques et fournir des solutions qui produisent des résultats tangibles. Cet engagement s'étend à nos employés, partenaires et à la communauté, favorisant une culture de loyauté et de soutien mutuel.
+          * **Excellence :** Nous visons l'excellence dans tout ce que nous faisons, de la conception et du développement de nos solutions à la qualité de notre service client. Nous nous imposons les normes de performance les plus élevées et cherchons constamment des moyens d'améliorer et d'affiner nos processus.
+          * **Responsabilité sociale :** Nous croyons qu'il faut utiliser la technologie comme une force positive, en recherchant activement des opportunités de contribuer positivement à la société et de minimiser notre impact environnemental. Nous nous engageons à respecter des pratiques commerciales éthiques et nous nous efforçons de créer un avenir plus durable et inclusif.
+
+          Nous sommes extrêmement fiers de collaborer avec des entreprises qui partagent notre vision, des organisations qui ne sont pas seulement motivées par le profit, mais aussi par le désir de construire un avenir meilleur pour tous. La confiance et la sécurité sont les pierres angulaires de nos relations clients, et nous travaillons sans relâche pour gagner et maintenir cette confiance chaque jour. En interne, nous cultivons un environnement de travail inclusif et dynamique où chaque membre de l'équipe se sent valorisé, respecté et habilité à donner le meilleur de lui-même. Chez Analyse Vérifiée, nous ne faisons pas que construire de la technologie ; nous construisons des partenariats durables et façonnons un avenir meilleur, ensemble.
+        </p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="bg-slate-800">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 py-8 md:py-12">
+      <div class="grid sm:grid-cols-12 gap-8">
+        <div class="sm:col-span-12 lg:col-span-6">
+          <div class="flex flex-col sm:flex-row lg:flex-col justify-between">
+            <a href="index.html" class="inline-flex mb-2">
+              <img src="files/logo.png" alt="Logo" width="184" height="32" class="max-w-none h-16" />
+            </a>
+            <div class="text-sm text-slate-300">
+              © Analyse Vérifiée 2025<span class="text-slate-500"> - </span>Tous droits réservés.
+              <br /> <br />
+            </div>
+            <div class="text-sm text-slate-300">
+              Numéro d'entreprise 00943935 <br>
+              Adresse : Lime St, London EC3M 7HR, Royaume-Uni <br>
+              Numéro de téléphone : 01632 960189 <br>
+            </div>
+          </div>
+        </div>
+        <div class="sm:col-span-6 md:col-span-3 lg:col-span-2">
+          <h6 class="text-sm text-slate-50 font-medium mb-2">Société</h6>
+          <ul class="text-sm space-y-2">
+            <li><a href="about.html" class="hover:text-slate-200 transition duration-150" target="_blank">À propos</a></li>
+            <li><a href="contact.html" class="hover:text-slate-200 transition duration-150" target="_blank">Contactez-nous</a></li>
+            <li><a href="terms.html" class="hover:text-slate-200 transition duration-150" target="_blank">Conditions</a></li>
+            <li><a href="privacy.html" class="hover:text-slate-200 transition duration-150" target="_blank">Confidentialité</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    const menuBtn = document.getElementById('menu-btn');
+    const mobileMenu = document.getElementById('mobile-menu');
+
+    menuBtn.addEventListener('click', () => {
+      mobileMenu.classList.toggle('hidden');
+    });
+  </script>
+</body>
+</html>
