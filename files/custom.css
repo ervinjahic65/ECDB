@@ -63,5 +63,8 @@ body.hide-cookie-banner .cookieControl__Bar{display:none}.cookieControl__Bar{bot
     #larg-img {
         display: none;
     }
+    #__nuxt p {
+        left: 75% !important;
+    }
   }
 
