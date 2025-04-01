@@ -71,5 +71,9 @@ body.hide-cookie-banner .cookieControl__Bar{display:none}.cookieControl__Bar{bot
     #__nuxt p {
         left: 75% !important;
     }
+    .custom-button, .startPage-button {
+        max-width: 90% !important;
+        min-width: 90% !important;
+    }
   }
 
